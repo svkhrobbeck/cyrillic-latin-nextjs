@@ -1,0 +1,37 @@
+{
+  "name": "cyrillic-latin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettify": "prettier --write \"{src,tools,public}/**/*.{json,ts,tsx,js,jsx,md,scss,css,html}\""
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "classnames": "^2.5.1",
+    "lucide-react": "^0.417.0",
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "sonner": "^1.5.0",
+    "use-clipboard-copy": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.7",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@yasudoro/latin-cyrillic": "^0.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "lodash": "^4.17.21",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
