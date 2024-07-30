@@ -52,7 +52,7 @@ const Home = () => {
             <Button
               onClick={() => {
                 clipboard.copy(isCyrillic ? toCyrillic(text) : toLatin(text));
-                toast.success("text copied");
+                toast.success("matndan nusxa olindi");
               }}
               title="copy text"
             >
