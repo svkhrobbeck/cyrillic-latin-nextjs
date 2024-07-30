@@ -27,7 +27,12 @@ const Home = () => {
   return (
     <main className="py-6">
       <div className="mx-auto w-full max-w-[1200px] px-5">
-        <div className={cx("relative flex w-full gap-5", !isCyrillic && "flex-row-reverse")}>
+        <div
+          className={cx(
+            "relative flex w-full flex-col gap-5 md:flex-row",
+            !isCyrillic && "flex-col-reverse md:flex-row-reverse",
+          )}
+        >
           <div className="absolute left-[50%] top-0 -translate-x-[50%]">
             <Button onClick={toggleAction}>
               <ArrowLeftRight size={18} />
