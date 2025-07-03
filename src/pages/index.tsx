@@ -1,18 +1,19 @@
-import { useState } from "react";
 import cx from "classnames";
+import { toast } from "sonner";
+import { useMemo, useState } from "react";
+import { useClipboard } from "use-clipboard-copy";
 import { ArrowLeftRight, Clipboard } from "lucide-react";
-import { toCyrillic, toLatin } from "@yasudoro/latin-cyrillic";
+import { toCyrillic, toLatin } from "latin-cyrillic-transliterator";
 
 import { Button, Textarea } from "@/components";
-import { useClipboard } from "use-clipboard-copy";
-import { toast } from "sonner";
 
 const Home = () => {
   const [text, setText] = useState<string>("");
   const clipboard = useClipboard();
 
   const [action, setAction] = useState<"cyrillic" | "latin">("cyrillic");
-  const isCyrillic = action === "cyrillic";
+
+  const isCyrillic = useMemo(() => action === "cyrillic", [action]);
 
   const toggleAction = () => {
     if (isCyrillic) setAction("latin");

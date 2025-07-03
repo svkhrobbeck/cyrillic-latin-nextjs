@@ -10,8 +10,8 @@
     "prettify": "prettier --write \"{src,tools,public}/**/*.{json,ts,tsx,js,jsx,md,scss,css,html}\""
   },
   "dependencies": {
-    "@yasudoro/latin-cyrillic": "^0.0.1",
     "classnames": "^2.5.1",
+    "latin-cyrillic-transliterator": "^1.0.3",
     "lucide-react": "^0.417.0",
     "next": "14.2.5",
     "react": "^18",
